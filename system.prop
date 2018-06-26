@@ -22,9 +22,6 @@ ro.sf.lcd_density=320
 # Factory reset protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# HWUI
-ro.hwui.text_large_cache_height=2048
-
 # IMS
 DEVICE_PROVISIONED=1
 persist.radio.jbims=1
