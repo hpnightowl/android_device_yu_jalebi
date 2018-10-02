@@ -228,7 +228,18 @@ PRODUCT_PACKAGES += \
     sensors.msm8916 \
     android.hardware.sensors@1.0-impl
 
-# Trust HAL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
+
+# TextClassifier smart selection model
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
+# Telephony
+#PRODUCT_PACKAGES += qti-telephony-common
+#PRODUCT_BOOT_JARS += telephony-ext
+
+# USB HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
 
