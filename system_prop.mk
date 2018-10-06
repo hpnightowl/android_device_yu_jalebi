@@ -53,6 +53,24 @@ ro.qualcomm.svi=1 \
 ro.sf.lcd_density=280 \
 ro.opengles.version=196608
 
+#DNS
+net.dns1=1.1.1.1
+net.dns2=1.0.0.1
+net.rmnet0.dns1=1.1.1.1
+net.rmnet0.dns2=1.0.0.1
+net.gprs.dns1=1.1.1.1
+net.gprs.dns2=1.0.0.1
+net.ppp0.dns1=1.1.1.1
+net.ppp0.dns2=1.0.0.1
+net.wlan0.dns1=1.1.1.1
+net.wlan0.dns2=1.0.0.1
+net.eth0.dns1=1.1.1.1
+net.eth0.dns2=1.0.0.1
+dhcp.eth0.dns1=1.1.1.1
+dhcp.eth0.dns2=1.0.0.1
+dhcp.wlan0.dns1=1.1.1.1
+dhcp.wlan0.dns2=1.0.0.1
+
 # Factory reset protection
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/platform/soc.0/7824900.sdhci/by-name/frp
@@ -94,7 +112,7 @@ ro.telephony.default_network=9,9 \
 persist.data.qmi.adb_logmask=0 \
 persist.radio.add_power_save=1 \
 persist.radio.apm_sim_not_pwdn=1 \
-ro.telephony.call_ring.multiple=false 
+ro.telephony.call_ring.multiple=false
 
 
 # Wi-Fi
