@@ -26,6 +26,9 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
 
+# APEX
+TARGET_FLATTEN_APEX := true
+
 # Architecture
 ifneq ($(FORCE_32_BIT),true)
 TARGET_ARCH := arm64
