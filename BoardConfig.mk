@@ -174,6 +174,9 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libflp.so|libshims_flp.so \
     /system/vendor/lib/libizat_core.so|libshims_get_process_name.so
 
+#Telephone
+TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
+
 # Wi-Fi
 TARGET_PROVIDES_WCNSS_QMI := true
 BOARD_HAS_QCOM_WLAN := true
