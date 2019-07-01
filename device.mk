@@ -15,9 +15,6 @@
 # limitations under the License.
 #
 
-# Inherit from msm8916-common
-$(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
-
 # Add APN(s)
 PRODUCT_COPY_FILES += device/yu/jalebi/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
