@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from jalebi device
 $(call inherit-product, device/yu/jalebi/device.mk)
@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_jalebi
+PRODUCT_NAME := dot_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
 PRODUCT_BRAND := YU
