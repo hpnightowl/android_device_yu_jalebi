@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Inherit from jalebi device
 $(call inherit-product, device/yu/jalebi/device.mk)
@@ -25,12 +25,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_jalebi
+PRODUCT_NAME := aosip_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU4711
 PRODUCT_MANUFACTURER := YU
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
