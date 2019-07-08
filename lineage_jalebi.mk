@@ -22,6 +22,10 @@ $(call inherit-product, device/yu/jalebi/device.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit System Prop for jalebi 
+$(call inherit-product, device/yu/jalebi/system_prop.mk)
+
+
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
