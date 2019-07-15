@@ -14,9 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 #device Specific
 TARGET_NO_BOOTLOADER := true
 FORCE_32_BIT := true
+BOARD_USES_ADRENO := true
+QCOM_HARDWARE_VARIANT := msm8916                
+TARGET_USES_QCOM_BSP := true
+TARGET_USES_QCOM_MM_AUDIO := true 
+TARGET_COMPILE_WITH_MSM_KERNEL := true 
 
 DEVICE_PATH := device/yu/jalebi
 
@@ -106,6 +112,14 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
+# Hals
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8916        # MSM8916 devices only
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8916      # MSM8916 devices only
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8916        # MSM8916 devices only
+TARGET_QCOM_BLUETOOTH_VARIANT := bt-caf
+TARGET_QCOM_WLAN_VARIANT := wlan-caf
+TARGET_RIL_VARIANT := caf
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8916
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8916
@@ -151,7 +165,6 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cm
 
 # Radio
 MALLOC_SVELTE := true
-TARGET_RIL_VARIANT := caf
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
