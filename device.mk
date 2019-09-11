@@ -108,6 +108,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# vendor_init
+PRODUCT_PACKAGES += \
+    libinit_msm8916
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916 \
