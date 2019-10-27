@@ -16,3 +16,9 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_jalebi.mk
+
+# Lunch choices
+COMMON_LUNCH_CHOICES := \
+    lineage_jalebi-userdebug \
+    lineage_jalebi-eng \
+    lineage_jalebi-user
