@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter msm8916 msm8939,$(TARGET_BOARD_PLATFORM_VARIANT)),)
+ifeq ($(TARGET_DEVICE), jalebi)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
